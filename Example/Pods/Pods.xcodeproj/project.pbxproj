@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0174E031859B3EE94F7DB70AFA8E10D1 /* Enums.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BB03D3DD24049222CE66B05BC1DAB /* Enums.ext.swift */; };
+		0BDD9EE4FD3283A5B69A2D39CBF36552 /* Array.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECFE6B7308EFFEF2E3AFCD5966CCE0F /* Array.ext.swift */; };
+		0D2FF00ADFBCD5FA2DDF51878BA47A01 /* Sequence.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8293DC7C21814E8461CF23F88247B29 /* Sequence.ext.swift */; };
+		18F822B159455CD6059A345B582CCEE2 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08873C45D5CE7D16D1EEB0802786CAA /* ReplaceMe.swift */; };
+		398C65561117F89A4DE587CC380A4ECE /* Numbers.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08174A7A4F2EA7281A7DE945FA71D0B /* Numbers.ext.swift */; };
+		402DE5814391241048E875E2205ED10F /* Pods-KhrysalisRuntimeInternal_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3122FC4A479184D2C63CE4581C168851 /* Pods-KhrysalisRuntimeInternal_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4083792151091C0C367AB02DF8BD26FD /* Triple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663EB84A8BCEC23C1206753601D03BE7 /* Triple.swift */; };
+		413DF735A222FF3288F453D69B9DBA30 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DAC7A762E2BEBCFD46E160312C7F4 /* DateExtensions.swift */; };
+		4480FAA26F812CED05BAEA6A0796A150 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EE5B61A45EBA05B945EE89C6EBD01 /* Exceptions.swift */; };
+		47D07A964F7AE402ACF78E1C85BC420D /* SequentialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76770FD4F9BD70DEF25C79FA37453959 /* SequentialData.swift */; };
+		57C6372F6A20C68ED1812794D03E7EA0 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B34ABA6699121771AB87EFD1192C628 /* Pair.swift */; };
+		5B1C5A2E5FF63FE72280A3B591C57390 /* Pods-KhrysalisRuntimeInternal_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B872476C357DAC9F23448B64BFB7F059 /* Pods-KhrysalisRuntimeInternal_Example-dummy.m */; };
+		5F984A7912FDE13853858DFF9D4D34F5 /* ConvenienceFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E581FD4555D3DBEF92F8984EDF8A8EB /* ConvenienceFunctions.swift */; };
+		675961FE0B7BEED520CB57DCCDD46C4A /* String.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACE2858AFE3441068C84E18AF33FF73 /* String.ext.swift */; };
+		80C3351FC12DB3B277B09DF5601BAE79 /* Foundation.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F686980DFEA0D73726D088933F0A5B /* Foundation.ext.swift */; };
+		88DB2771F4EE2150E055DC559D073E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		96C7EEB9DABE05476E12984668539A9F /* Comparable.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B60E4E2777F9CDB4E5332C58AC3594 /* Comparable.ext.swift */; };
+		98B8B09086E04AA911DEE52D389E13C0 /* KhrysalisRuntimeInternal-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B676904B488A30147FF25DFC730E3A /* KhrysalisRuntimeInternal-dummy.m */; };
+		9946B59FC760DC18CB52ACF8443E155C /* Pods-KhrysalisRuntimeInternal_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7344B99821302C4FD16BE263FC4A15F7 /* Pods-KhrysalisRuntimeInternal_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE7A48DE45E1C5B8A00FA1305E0E1D1 /* Dictionary.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268816FFC97A911729662E76E808745 /* Dictionary.ext.swift */; };
+		9C64FA18490E203B41BB97974B12A161 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E8ABA46B30314B82DEBA682A6E9E1D /* Box.swift */; };
+		A2DA230BB813D9F1AA134BFCCE9AD0FC /* NSRegularExpression.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A663D16C3ABFEEBE60675FCEF77302F /* NSRegularExpression.ext.swift */; };
+		A772D78F4FBA4D7E62A0ABE4E834ACDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AC8F633A1F6DA33EF05E433B7EA6596F /* KhrysalisRuntimeInternal-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 725D0316B5DB05DFFA418CA1557ADA8B /* KhrysalisRuntimeInternal-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0861691B68A1E01AAB1B8742BE96DCB /* UUID.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BE9DA4EF814A0B0C45F81FF9CC43FD /* UUID.ext.swift */; };
+		B0CB7BEE775C1C0ED871BB68CA052AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B289FE953049BF776365508EC58D42F6 /* OptionalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA2555D403230A34F3A45C5486D8BF /* OptionalProtocol.swift */; };
+		C6A23CB0494BCE52F879B53BF7D83595 /* Collection.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9C2057D3A58559471FCE09DC2BFB2 /* Collection.ext.swift */; };
+		CAE60B405F8E61404A34A08F824BFA88 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEB7C7684C28E355B9331A048D8403 /* Platform.swift */; };
+		CD413B504A69F37527FB8A98DE436727 /* SystemTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A526025AE909E453EF6191C1B68C4 /* SystemTime.swift */; };
+		D0A11C6398604F62D6B6E77CC7ADD5FF /* Pods-KhrysalisRuntimeInternal_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F17A56E63F25D72BCF205E886EBC194B /* Pods-KhrysalisRuntimeInternal_Tests-dummy.m */; };
+		E90851C5CDF6F833DE2716A3870ABED8 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC68E02D811C4FB82E4CE48BD42DF5C /* Random.swift */; };
+		F282296EB30B5BBCBA1A1CAADA1B943C /* KotlinStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E180DB13DB5A95C59263F4AEA7A97711 /* KotlinStyle.swift */; };
+		F37BF401A4E15CD9123D3E430FE83623 /* UIColor.ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F91A4A298C0211AB8409F24C87ECA86 /* UIColor.ext.swift */; };
+		F78A47620FF4159693A72A660BD315BD /* CGRect+bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF3D48DD17A6DC5BDE80343FFC86B6 /* CGRect+bounds.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23D65E85E8C871C82F0BAB20AE8AE3D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 167BBC5F340B4D7F175F89F48B070786;
+			remoteInfo = "Pods-KhrysalisRuntimeInternal_Example";
+		};
+		597C11CC7601F6367A976B6E788878BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA206833348F6495979CC609E8D48712;
+			remoteInfo = KhrysalisRuntimeInternal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16EEB7C7684C28E355B9331A048D8403 /* Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		2F91A4A298C0211AB8409F24C87ECA86 /* UIColor.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColor.ext.swift; sourceTree = "<group>"; };
+		3122FC4A479184D2C63CE4581C168851 /* Pods-KhrysalisRuntimeInternal_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KhrysalisRuntimeInternal_Example-umbrella.h"; sourceTree = "<group>"; };
+		377BB03D3DD24049222CE66B05BC1DAB /* Enums.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Enums.ext.swift; sourceTree = "<group>"; };
+		3B1289AD808BD0B0B67BD0DB55207A88 /* Pods-KhrysalisRuntimeInternal_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KhrysalisRuntimeInternal_Tests-Info.plist"; sourceTree = "<group>"; };
+		41DA2555D403230A34F3A45C5486D8BF /* OptionalProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OptionalProtocol.swift; sourceTree = "<group>"; };
+		435A526025AE909E453EF6191C1B68C4 /* SystemTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SystemTime.swift; sourceTree = "<group>"; };
+		44256717BD465EA164270AD39C11DBDD /* KhrysalisRuntimeInternal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KhrysalisRuntimeInternal.debug.xcconfig; sourceTree = "<group>"; };
+		45C930388FBEC763703F2565D5002C72 /* Pods-KhrysalisRuntimeInternal_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KhrysalisRuntimeInternal_Example.release.xcconfig"; sourceTree = "<group>"; };
+		48BE9DA4EF814A0B0C45F81FF9CC43FD /* UUID.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UUID.ext.swift; sourceTree = "<group>"; };
+		4B84D1D2F0C59ADD467597BFEF608B26 /* Pods-KhrysalisRuntimeInternal_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KhrysalisRuntimeInternal_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4E95E4C8B7AD525A194D67F8A3989CE4 /* Pods-KhrysalisRuntimeInternal_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KhrysalisRuntimeInternal_Tests"; path = Pods_KhrysalisRuntimeInternal_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F686980DFEA0D73726D088933F0A5B /* Foundation.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Foundation.ext.swift; sourceTree = "<group>"; };
+		590435F8A18363D4467D1DF854DA93EF /* Pods-KhrysalisRuntimeInternal_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KhrysalisRuntimeInternal_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5A663D16C3ABFEEBE60675FCEF77302F /* NSRegularExpression.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSRegularExpression.ext.swift; sourceTree = "<group>"; };
+		5BF6E6B5F6BE4D141DFE373A12C9C627 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5FF9CC25A8F6AEAD40E919654E1A0DDB /* KhrysalisRuntimeInternal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KhrysalisRuntimeInternal.modulemap; sourceTree = "<group>"; };
+		6268816FFC97A911729662E76E808745 /* Dictionary.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dictionary.ext.swift; sourceTree = "<group>"; };
+		63B60E4E2777F9CDB4E5332C58AC3594 /* Comparable.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Comparable.ext.swift; sourceTree = "<group>"; };
+		663EB84A8BCEC23C1206753601D03BE7 /* Triple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Triple.swift; sourceTree = "<group>"; };
+		6B34ABA6699121771AB87EFD1192C628 /* Pair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		6E581FD4555D3DBEF92F8984EDF8A8EB /* ConvenienceFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConvenienceFunctions.swift; sourceTree = "<group>"; };
+		6EF65BFC881356D061904540F2AEA0A5 /* Pods-KhrysalisRuntimeInternal_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KhrysalisRuntimeInternal_Tests.modulemap"; sourceTree = "<group>"; };
+		725D0316B5DB05DFFA418CA1557ADA8B /* KhrysalisRuntimeInternal-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KhrysalisRuntimeInternal-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7344B99821302C4FD16BE263FC4A15F7 /* Pods-KhrysalisRuntimeInternal_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KhrysalisRuntimeInternal_Tests-umbrella.h"; sourceTree = "<group>"; };
+		76770FD4F9BD70DEF25C79FA37453959 /* SequentialData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SequentialData.swift; sourceTree = "<group>"; };
+		7C7D903D316D410726D8AF54BA056250 /* KhrysalisRuntimeInternal-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KhrysalisRuntimeInternal-Info.plist"; sourceTree = "<group>"; };
+		7E828FF85C39E897FEA64BE0ACDBADEF /* Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		843EE5B61A45EBA05B945EE89C6EBD01 /* Exceptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
+		8841D3BAB22BCCA6C5D4E9226F4D5E30 /* KhrysalisRuntimeInternal.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KhrysalisRuntimeInternal.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A426F6AA76A0236F080C7D5B75469C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8ACF3D48DD17A6DC5BDE80343FFC86B6 /* CGRect+bounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGRect+bounds.swift"; sourceTree = "<group>"; };
+		8FD668370E0122ECA66044DF31F19B43 /* Pods-KhrysalisRuntimeInternal_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KhrysalisRuntimeInternal_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		91B676904B488A30147FF25DFC730E3A /* KhrysalisRuntimeInternal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KhrysalisRuntimeInternal-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A059857518F9408984349DB916DC1D36 /* Pods-KhrysalisRuntimeInternal_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KhrysalisRuntimeInternal_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0E8ABA46B30314B82DEBA682A6E9E1D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A2D260D6E2772C34FBC0C9045E6ED565 /* KhrysalisRuntimeInternal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KhrysalisRuntimeInternal.release.xcconfig; sourceTree = "<group>"; };
+		A54DAC7A762E2BEBCFD46E160312C7F4 /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A7E8D10ABDD4DE2FD7B9DDD8E6FE5C28 /* Pods-KhrysalisRuntimeInternal_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KhrysalisRuntimeInternal_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2EAFE87D248C9CF712516F1314EF66 /* KhrysalisRuntimeInternal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KhrysalisRuntimeInternal-prefix.pch"; sourceTree = "<group>"; };
+		ACA34E707A0CF0C2D38B72316C799E02 /* Pods-KhrysalisRuntimeInternal_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KhrysalisRuntimeInternal_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADF9C2057D3A58559471FCE09DC2BFB2 /* Collection.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Collection.ext.swift; sourceTree = "<group>"; };
+		AECFE6B7308EFFEF2E3AFCD5966CCE0F /* Array.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Array.ext.swift; sourceTree = "<group>"; };
+		AF427CD612EB07719E6C77EF64F904FB /* Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B872476C357DAC9F23448B64BFB7F059 /* Pods-KhrysalisRuntimeInternal_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KhrysalisRuntimeInternal_Example-dummy.m"; sourceTree = "<group>"; };
+		C4AF9BA946EDD51B0B36B0B07EFCC92C /* Pods-KhrysalisRuntimeInternal_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KhrysalisRuntimeInternal_Example.modulemap"; sourceTree = "<group>"; };
+		C8F18AEC6DD656DC2118BA5CC6DB7442 /* Pods-KhrysalisRuntimeInternal_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KhrysalisRuntimeInternal_Example-Info.plist"; sourceTree = "<group>"; };
+		CACE2858AFE3441068C84E18AF33FF73 /* String.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = String.ext.swift; sourceTree = "<group>"; };
+		D08873C45D5CE7D16D1EEB0802786CAA /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = KhrysalisRuntimeInternal/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		DA6895FECFADDAAAFF57010DF864E954 /* KhrysalisRuntimeInternal */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KhrysalisRuntimeInternal; path = KhrysalisRuntimeInternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E180DB13DB5A95C59263F4AEA7A97711 /* KotlinStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KotlinStyle.swift; sourceTree = "<group>"; };
+		E53160268313CD9C832CBB4EF96D2822 /* Pods-KhrysalisRuntimeInternal_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KhrysalisRuntimeInternal_Example"; path = Pods_KhrysalisRuntimeInternal_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8293DC7C21814E8461CF23F88247B29 /* Sequence.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sequence.ext.swift; sourceTree = "<group>"; };
+		F08174A7A4F2EA7281A7DE945FA71D0B /* Numbers.ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Numbers.ext.swift; sourceTree = "<group>"; };
+		F17A56E63F25D72BCF205E886EBC194B /* Pods-KhrysalisRuntimeInternal_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KhrysalisRuntimeInternal_Tests-dummy.m"; sourceTree = "<group>"; };
+		FDC68E02D811C4FB82E4CE48BD42DF5C /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BFADC0A68FA22BA17A50FCDED526B15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A772D78F4FBA4D7E62A0ABE4E834ACDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7917ED9C60D461FBBF25CA7F45FFD05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0CB7BEE775C1C0ED871BB68CA052AE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E249F2F292F406229C95D84D103E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DB2771F4EE2150E055DC559D073E90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15CE25276D0A1EA3AF667FBFBF9E83E2 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				E180DB13DB5A95C59263F4AEA7A97711 /* KotlinStyle.swift */,
+			);
+			name = kotlin;
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		1BC86C1CB36B4D3C98AA2B3A0F090CEC /* ios-runtime */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DC7F5AF8BA95CEE4C2C72447A04DF /* KhrysalisRuntime */,
+			);
+			name = "ios-runtime";
+			path = "KhrysalisRuntimeInternal/Classes/ios-runtime";
+			sourceTree = "<group>";
+		};
+		233C2DDA4BD1899F25CDBE3CA11E0D3B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FF9CC25A8F6AEAD40E919654E1A0DDB /* KhrysalisRuntimeInternal.modulemap */,
+				91B676904B488A30147FF25DFC730E3A /* KhrysalisRuntimeInternal-dummy.m */,
+				7C7D903D316D410726D8AF54BA056250 /* KhrysalisRuntimeInternal-Info.plist */,
+				AB2EAFE87D248C9CF712516F1314EF66 /* KhrysalisRuntimeInternal-prefix.pch */,
+				725D0316B5DB05DFFA418CA1557ADA8B /* KhrysalisRuntimeInternal-umbrella.h */,
+				44256717BD465EA164270AD39C11DBDD /* KhrysalisRuntimeInternal.debug.xcconfig */,
+				A2D260D6E2772C34FBC0C9045E6ED565 /* KhrysalisRuntimeInternal.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KhrysalisRuntimeInternal";
+			sourceTree = "<group>";
+		};
+		237F597B2F1D3704F1ABDCD701572529 /* Pods-KhrysalisRuntimeInternal_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6EF65BFC881356D061904540F2AEA0A5 /* Pods-KhrysalisRuntimeInternal_Tests.modulemap */,
+				AF427CD612EB07719E6C77EF64F904FB /* Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.markdown */,
+				7E828FF85C39E897FEA64BE0ACDBADEF /* Pods-KhrysalisRuntimeInternal_Tests-acknowledgements.plist */,
+				F17A56E63F25D72BCF205E886EBC194B /* Pods-KhrysalisRuntimeInternal_Tests-dummy.m */,
+				3B1289AD808BD0B0B67BD0DB55207A88 /* Pods-KhrysalisRuntimeInternal_Tests-Info.plist */,
+				7344B99821302C4FD16BE263FC4A15F7 /* Pods-KhrysalisRuntimeInternal_Tests-umbrella.h */,
+				A7E8D10ABDD4DE2FD7B9DDD8E6FE5C28 /* Pods-KhrysalisRuntimeInternal_Tests.debug.xcconfig */,
+				590435F8A18363D4467D1DF854DA93EF /* Pods-KhrysalisRuntimeInternal_Tests.release.xcconfig */,
+			);
+			name = "Pods-KhrysalisRuntimeInternal_Tests";
+			path = "Target Support Files/Pods-KhrysalisRuntimeInternal_Tests";
+			sourceTree = "<group>";
+		};
+		2FD2B4752DF6DE1EF2A570A0D2170DDF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3174E7AD0396DAF396E6EDAAD5DAA2AB /* KhrysalisRuntimeInternal */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3174E7AD0396DAF396E6EDAAD5DAA2AB /* KhrysalisRuntimeInternal */ = {
+			isa = PBXGroup;
+			children = (
+				D08873C45D5CE7D16D1EEB0802786CAA /* ReplaceMe.swift */,
+				1BC86C1CB36B4D3C98AA2B3A0F090CEC /* ios-runtime */,
+				F06E7D2B6DAEB50A4D092BD20B24084C /* Pod */,
+				233C2DDA4BD1899F25CDBE3CA11E0D3B /* Support Files */,
+			);
+			name = KhrysalisRuntimeInternal;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		31DB07DDFD63F220D0FA8A9EEB3DC36F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA6895FECFADDAAAFF57010DF864E954 /* KhrysalisRuntimeInternal */,
+				E53160268313CD9C832CBB4EF96D2822 /* Pods-KhrysalisRuntimeInternal_Example */,
+				4E95E4C8B7AD525A194D67F8A3989CE4 /* Pods-KhrysalisRuntimeInternal_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		459FE82D0CE95D263D61A53172664EA1 /* time */ = {
+			isa = PBXGroup;
+			children = (
+				A54DAC7A762E2BEBCFD46E160312C7F4 /* DateExtensions.swift */,
+			);
+			name = time;
+			path = time;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76B5994990FE9FBDAB6D0EBB6C2399A7 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				8ACF3D48DD17A6DC5BDE80343FFC86B6 /* CGRect+bounds.swift */,
+			);
+			name = android;
+			path = android;
+			sourceTree = "<group>";
+		};
+		8A5DC7F5AF8BA95CEE4C2C72447A04DF /* KhrysalisRuntime */ = {
+			isa = PBXGroup;
+			children = (
+				E250BADE57C14A81CD653C7D79E0D593 /* Classes */,
+			);
+			name = KhrysalisRuntime;
+			path = KhrysalisRuntime;
+			sourceTree = "<group>";
+		};
+		BFE61F93F74EFE4B97687425FDD059ED /* core */ = {
+			isa = PBXGroup;
+			children = (
+				AECFE6B7308EFFEF2E3AFCD5966CCE0F /* Array.ext.swift */,
+				ADF9C2057D3A58559471FCE09DC2BFB2 /* Collection.ext.swift */,
+				63B60E4E2777F9CDB4E5332C58AC3594 /* Comparable.ext.swift */,
+				6E581FD4555D3DBEF92F8984EDF8A8EB /* ConvenienceFunctions.swift */,
+				6268816FFC97A911729662E76E808745 /* Dictionary.ext.swift */,
+				377BB03D3DD24049222CE66B05BC1DAB /* Enums.ext.swift */,
+				843EE5B61A45EBA05B945EE89C6EBD01 /* Exceptions.swift */,
+				57F686980DFEA0D73726D088933F0A5B /* Foundation.ext.swift */,
+				5A663D16C3ABFEEBE60675FCEF77302F /* NSRegularExpression.ext.swift */,
+				F08174A7A4F2EA7281A7DE945FA71D0B /* Numbers.ext.swift */,
+				41DA2555D403230A34F3A45C5486D8BF /* OptionalProtocol.swift */,
+				6B34ABA6699121771AB87EFD1192C628 /* Pair.swift */,
+				E8293DC7C21814E8461CF23F88247B29 /* Sequence.ext.swift */,
+				76770FD4F9BD70DEF25C79FA37453959 /* SequentialData.swift */,
+				CACE2858AFE3441068C84E18AF33FF73 /* String.ext.swift */,
+				435A526025AE909E453EF6191C1B68C4 /* SystemTime.swift */,
+				663EB84A8BCEC23C1206753601D03BE7 /* Triple.swift */,
+				2F91A4A298C0211AB8409F24C87ECA86 /* UIColor.ext.swift */,
+				48BE9DA4EF814A0B0C45F81FF9CC43FD /* UUID.ext.swift */,
+			);
+			name = core;
+			path = core;
+			sourceTree = "<group>";
+		};
+		C092C8211952EEF1826FC22DA89F0B80 /* Pods-KhrysalisRuntimeInternal_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF9BA946EDD51B0B36B0B07EFCC92C /* Pods-KhrysalisRuntimeInternal_Example.modulemap */,
+				A059857518F9408984349DB916DC1D36 /* Pods-KhrysalisRuntimeInternal_Example-acknowledgements.markdown */,
+				ACA34E707A0CF0C2D38B72316C799E02 /* Pods-KhrysalisRuntimeInternal_Example-acknowledgements.plist */,
+				B872476C357DAC9F23448B64BFB7F059 /* Pods-KhrysalisRuntimeInternal_Example-dummy.m */,
+				4B84D1D2F0C59ADD467597BFEF608B26 /* Pods-KhrysalisRuntimeInternal_Example-frameworks.sh */,
+				C8F18AEC6DD656DC2118BA5CC6DB7442 /* Pods-KhrysalisRuntimeInternal_Example-Info.plist */,
+				3122FC4A479184D2C63CE4581C168851 /* Pods-KhrysalisRuntimeInternal_Example-umbrella.h */,
+				8FD668370E0122ECA66044DF31F19B43 /* Pods-KhrysalisRuntimeInternal_Example.debug.xcconfig */,
+				45C930388FBEC763703F2565D5002C72 /* Pods-KhrysalisRuntimeInternal_Example.release.xcconfig */,
+			);
+			name = "Pods-KhrysalisRuntimeInternal_Example";
+			path = "Target Support Files/Pods-KhrysalisRuntimeInternal_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2FD2B4752DF6DE1EF2A570A0D2170DDF /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				31DB07DDFD63F220D0FA8A9EEB3DC36F /* Products */,
+				EF72B43F3ED429B3F45202B96FEB2DD2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E250BADE57C14A81CD653C7D79E0D593 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A0E8ABA46B30314B82DEBA682A6E9E1D /* Box.swift */,
+				16EEB7C7684C28E355B9331A048D8403 /* Platform.swift */,
+				FDC68E02D811C4FB82E4CE48BD42DF5C /* Random.swift */,
+				76B5994990FE9FBDAB6D0EBB6C2399A7 /* android */,
+				BFE61F93F74EFE4B97687425FDD059ED /* core */,
+				15CE25276D0A1EA3AF667FBFBF9E83E2 /* kotlin */,
+				459FE82D0CE95D263D61A53172664EA1 /* time */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF72B43F3ED429B3F45202B96FEB2DD2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C092C8211952EEF1826FC22DA89F0B80 /* Pods-KhrysalisRuntimeInternal_Example */,
+				237F597B2F1D3704F1ABDCD701572529 /* Pods-KhrysalisRuntimeInternal_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F06E7D2B6DAEB50A4D092BD20B24084C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8841D3BAB22BCCA6C5D4E9226F4D5E30 /* KhrysalisRuntimeInternal.podspec */,
+				8A426F6AA76A0236F080C7D5B75469C5 /* LICENSE */,
+				5BF6E6B5F6BE4D141DFE373A12C9C627 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33A156A164FA01227B329D107A6B0EB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8F633A1F6DA33EF05E433B7EA6596F /* KhrysalisRuntimeInternal-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CF02711CB96D3D7760DB6812BEDB91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				402DE5814391241048E875E2205ED10F /* Pods-KhrysalisRuntimeInternal_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3A60400A46E6BBDFF2014A321F7445 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9946B59FC760DC18CB52ACF8443E155C /* Pods-KhrysalisRuntimeInternal_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		167BBC5F340B4D7F175F89F48B070786 /* Pods-KhrysalisRuntimeInternal_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04E6CF8642379AADAFB2C31BE8D3B20 /* Build configuration list for PBXNativeTarget "Pods-KhrysalisRuntimeInternal_Example" */;
+			buildPhases = (
+				A8CF02711CB96D3D7760DB6812BEDB91 /* Headers */,
+				3D92E8777448B019F1F4B2B3BE896B07 /* Sources */,
+				2BFADC0A68FA22BA17A50FCDED526B15 /* Frameworks */,
+				72A23C970DE173CA5C8F593FC3A8B75A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6F03C29AFDBB53ACF20DC35D67F6212 /* PBXTargetDependency */,
+			);
+			name = "Pods-KhrysalisRuntimeInternal_Example";
+			productName = Pods_KhrysalisRuntimeInternal_Example;
+			productReference = E53160268313CD9C832CBB4EF96D2822 /* Pods-KhrysalisRuntimeInternal_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		57EFF67276AA90BC5F7C9BE182907AE4 /* Pods-KhrysalisRuntimeInternal_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9110745516025D1FD6234BCE53B39A7D /* Build configuration list for PBXNativeTarget "Pods-KhrysalisRuntimeInternal_Tests" */;
+			buildPhases = (
+				FE3A60400A46E6BBDFF2014A321F7445 /* Headers */,
+				FF76C1CF0654E954B31E02089E10BA0F /* Sources */,
+				7917ED9C60D461FBBF25CA7F45FFD05F /* Frameworks */,
+				7399B4385142953E3284AD5F3945FEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F338C1C5E533D883D3A1194BF38E92C /* PBXTargetDependency */,
+			);
+			name = "Pods-KhrysalisRuntimeInternal_Tests";
+			productName = Pods_KhrysalisRuntimeInternal_Tests;
+			productReference = 4E95E4C8B7AD525A194D67F8A3989CE4 /* Pods-KhrysalisRuntimeInternal_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA206833348F6495979CC609E8D48712 /* KhrysalisRuntimeInternal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C38D50EA1EAD3058971BBA2E4AE6B10 /* Build configuration list for PBXNativeTarget "KhrysalisRuntimeInternal" */;
+			buildPhases = (
+				33A156A164FA01227B329D107A6B0EB0 /* Headers */,
+				DFDEA280FDB931D9385080895C93A7BA /* Sources */,
+				E8E249F2F292F406229C95D84D103E68 /* Frameworks */,
+				E1674EFE0789A7B192C2F7D2F5B8FD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KhrysalisRuntimeInternal;
+			productName = KhrysalisRuntimeInternal;
+			productReference = DA6895FECFADDAAAFF57010DF864E954 /* KhrysalisRuntimeInternal */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 31DB07DDFD63F220D0FA8A9EEB3DC36F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA206833348F6495979CC609E8D48712 /* KhrysalisRuntimeInternal */,
+				167BBC5F340B4D7F175F89F48B070786 /* Pods-KhrysalisRuntimeInternal_Example */,
+				57EFF67276AA90BC5F7C9BE182907AE4 /* Pods-KhrysalisRuntimeInternal_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72A23C970DE173CA5C8F593FC3A8B75A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7399B4385142953E3284AD5F3945FEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1674EFE0789A7B192C2F7D2F5B8FD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D92E8777448B019F1F4B2B3BE896B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1C5A2E5FF63FE72280A3B591C57390 /* Pods-KhrysalisRuntimeInternal_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFDEA280FDB931D9385080895C93A7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDD9EE4FD3283A5B69A2D39CBF36552 /* Array.ext.swift in Sources */,
+				9C64FA18490E203B41BB97974B12A161 /* Box.swift in Sources */,
+				F78A47620FF4159693A72A660BD315BD /* CGRect+bounds.swift in Sources */,
+				C6A23CB0494BCE52F879B53BF7D83595 /* Collection.ext.swift in Sources */,
+				96C7EEB9DABE05476E12984668539A9F /* Comparable.ext.swift in Sources */,
+				5F984A7912FDE13853858DFF9D4D34F5 /* ConvenienceFunctions.swift in Sources */,
+				413DF735A222FF3288F453D69B9DBA30 /* DateExtensions.swift in Sources */,
+				9BE7A48DE45E1C5B8A00FA1305E0E1D1 /* Dictionary.ext.swift in Sources */,
+				0174E031859B3EE94F7DB70AFA8E10D1 /* Enums.ext.swift in Sources */,
+				4480FAA26F812CED05BAEA6A0796A150 /* Exceptions.swift in Sources */,
+				80C3351FC12DB3B277B09DF5601BAE79 /* Foundation.ext.swift in Sources */,
+				98B8B09086E04AA911DEE52D389E13C0 /* KhrysalisRuntimeInternal-dummy.m in Sources */,
+				F282296EB30B5BBCBA1A1CAADA1B943C /* KotlinStyle.swift in Sources */,
+				A2DA230BB813D9F1AA134BFCCE9AD0FC /* NSRegularExpression.ext.swift in Sources */,
+				398C65561117F89A4DE587CC380A4ECE /* Numbers.ext.swift in Sources */,
+				B289FE953049BF776365508EC58D42F6 /* OptionalProtocol.swift in Sources */,
+				57C6372F6A20C68ED1812794D03E7EA0 /* Pair.swift in Sources */,
+				CAE60B405F8E61404A34A08F824BFA88 /* Platform.swift in Sources */,
+				E90851C5CDF6F833DE2716A3870ABED8 /* Random.swift in Sources */,
+				18F822B159455CD6059A345B582CCEE2 /* ReplaceMe.swift in Sources */,
+				0D2FF00ADFBCD5FA2DDF51878BA47A01 /* Sequence.ext.swift in Sources */,
+				47D07A964F7AE402ACF78E1C85BC420D /* SequentialData.swift in Sources */,
+				675961FE0B7BEED520CB57DCCDD46C4A /* String.ext.swift in Sources */,
+				CD413B504A69F37527FB8A98DE436727 /* SystemTime.swift in Sources */,
+				4083792151091C0C367AB02DF8BD26FD /* Triple.swift in Sources */,
+				F37BF401A4E15CD9123D3E430FE83623 /* UIColor.ext.swift in Sources */,
+				B0861691B68A1E01AAB1B8742BE96DCB /* UUID.ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF76C1CF0654E954B31E02089E10BA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A11C6398604F62D6B6E77CC7ADD5FF /* Pods-KhrysalisRuntimeInternal_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F338C1C5E533D883D3A1194BF38E92C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KhrysalisRuntimeInternal_Example";
+			target = 167BBC5F340B4D7F175F89F48B070786 /* Pods-KhrysalisRuntimeInternal_Example */;
+			targetProxy = 23D65E85E8C871C82F0BAB20AE8AE3D7 /* PBXContainerItemProxy */;
+		};
+		E6F03C29AFDBB53ACF20DC35D67F6212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KhrysalisRuntimeInternal;
+			target = AA206833348F6495979CC609E8D48712 /* KhrysalisRuntimeInternal */;
+			targetProxy = 597C11CC7601F6367A976B6E788878BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E2CE1F283031CE1707FABEE46CC1013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D260D6E2772C34FBC0C9045E6ED565 /* KhrysalisRuntimeInternal.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal.modulemap";
+				PRODUCT_MODULE_NAME = KhrysalisRuntimeInternal;
+				PRODUCT_NAME = KhrysalisRuntimeInternal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D21F5A929CD2573AD455779BF210613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C930388FBEC763703F2565D5002C72 /* Pods-KhrysalisRuntimeInternal_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Example/Pods-KhrysalisRuntimeInternal_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Example/Pods-KhrysalisRuntimeInternal_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A9F42A0AEDD232D0E7FCDD39F6088AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590435F8A18363D4467D1DF854DA93EF /* Pods-KhrysalisRuntimeInternal_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Tests/Pods-KhrysalisRuntimeInternal_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Tests/Pods-KhrysalisRuntimeInternal_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BFE9E4D1A88193ECC0FD8B839C7F3A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD668370E0122ECA66044DF31F19B43 /* Pods-KhrysalisRuntimeInternal_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Example/Pods-KhrysalisRuntimeInternal_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Example/Pods-KhrysalisRuntimeInternal_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7E3A47400CC9D706EE050E3DEE83ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E8D10ABDD4DE2FD7B9DDD8E6FE5C28 /* Pods-KhrysalisRuntimeInternal_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Tests/Pods-KhrysalisRuntimeInternal_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KhrysalisRuntimeInternal_Tests/Pods-KhrysalisRuntimeInternal_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED9A99F8D2E1B4AD2B1F34110270F535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44256717BD465EA164270AD39C11DBDD /* KhrysalisRuntimeInternal.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KhrysalisRuntimeInternal/KhrysalisRuntimeInternal.modulemap";
+				PRODUCT_MODULE_NAME = KhrysalisRuntimeInternal;
+				PRODUCT_NAME = KhrysalisRuntimeInternal;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9110745516025D1FD6234BCE53B39A7D /* Build configuration list for PBXNativeTarget "Pods-KhrysalisRuntimeInternal_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E3A47400CC9D706EE050E3DEE83ABC /* Debug */,
+				A9F42A0AEDD232D0E7FCDD39F6088AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C38D50EA1EAD3058971BBA2E4AE6B10 /* Build configuration list for PBXNativeTarget "KhrysalisRuntimeInternal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9A99F8D2E1B4AD2B1F34110270F535 /* Debug */,
+				2E2CE1F283031CE1707FABEE46CC1013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04E6CF8642379AADAFB2C31BE8D3B20 /* Build configuration list for PBXNativeTarget "Pods-KhrysalisRuntimeInternal_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE9E4D1A88193ECC0FD8B839C7F3A09 /* Debug */,
+				8D21F5A929CD2573AD455779BF210613 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

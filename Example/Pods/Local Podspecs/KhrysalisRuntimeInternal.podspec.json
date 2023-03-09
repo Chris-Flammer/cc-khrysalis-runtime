@@ -1,0 +1,24 @@
+{
+  "name": "KhrysalisRuntimeInternal",
+  "version": "0.1.0",
+  "summary": "KhrysalisRuntime Internal",
+  "description": "Copy of LK's KhrysalisRuntime Framework, since LK doesn't bother with things like linting or versioning",
+  "homepage": "https://www.campchef.com/",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Chris-Flammer": "mail@chrisflammer.com"
+  },
+  "source": {
+    "git": "https://github.com/Chris-Flammer/cc-khrysalis-runtime.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "KhrysalisRuntimeInternal/Classes/**/*",
+  "swift_versions": "5",
+  "swift_version": "5"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - KhrysalisRuntimeInternal (0.1.0)
+
+DEPENDENCIES:
+  - KhrysalisRuntimeInternal (from `../`)
+
+EXTERNAL SOURCES:
+  KhrysalisRuntimeInternal:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KhrysalisRuntimeInternal: 3bd667d7787bbc457e9512e44df414e24b16b8a4
+
+PODFILE CHECKSUM: ae40f22df644e9d074c9b1875933679e60d17138
+
+COCOAPODS: 1.11.3
